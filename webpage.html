@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.header {
+	width: 100px;
+	padding: 30px;
+	background-color: #799;
+}
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100px;
+  margin: 0;
+  font-family: Comic Sans MS;
+}
+/* span */
+span{ background-color:black;
+       color:white;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #999;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content*/
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 1000px;
+}
+.homes{
+font-size: 27px;
+}
+table {
+  width:500px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+img.rounded-corners {
+  border-radius: 50px;
+}
+body {
+  background-image: url('images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</style>
+</head>
+ <!-- Slide Show -->
+<section>
+  <img class="mySlides" src="images/pubg.jpg"
+  style="width:1520px;height:600px;">
+  <img class="mySlides" src="images/valorent.jpg"
+  style="width:1520px;height:600px;">
+  <img class="mySlides" src="images/ml1.jpg"
+  style="width:1520px;height:600px;">
+</section>
+<body>
+<button class="tablink" onclick="openPage('Home', this, 'violet')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('E-sportNews', this, 'lightgreen')">E-sport News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'lightblue')">Contact</button>
+<button class="tablink" onclick="openPage('Mercandise/Form', this, 'coral')">Mercandise/Form</button>
+
+<div id="Home" class="tabcontent">
+<section class="homes" style="max-width:1300px">
+  <h1 <p1> <span>Memboi Gaming :</span></p1></h1>
+  <p1><span>Offically created in April 2019.</span></p1>
+  <br>
+  <p1><span>Our focus is on E-sport community. We often stream online at facebook gaming.</span></p1>
+  <br>
+  <p1><span>You guys can support our live streaming by like, share or donate star.</span></p1>
+	<br>
+	<br>
+  <p1><span>We going to do giveaway for our supporters and fans every month.</span></p1>
+  <br>
+  <p1><span>So make sure you guys stay tuned with Memboi Gaming.</span></p1>
+	<br>
+	<br>
+  <p1><span>We hope you guys will enjoy our live streaming and will keep supporting us </span></p1>
+  <p1><span>so that, we together can grow Malaysia E-sport industry towards better future.</span></p1>
+	<br>
+	<br>
+	<div style="text-align:center"> 
+	 <p1><span>First montage of my gameplay :</span></p1><br>
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br>
+  <video id="video1" width="420">
+    <source src="vid/montage1.mp4" type="video/mp4">
+    <source src="mp3/montage1.ogg" type="video/ogg">
+	<br>
+  </video>
+  <br>
+  <div style="text-align:center"> 
+	 <p1><span>Second montage of my gameplay :</span></p1><br>
+  <video width="720" height="400" controls>
+    <source src="vid/montage2.mp4" type="video/mp4">
+    <source src="mp3/montage2.ogg" type="video/ogg"><br>
+</div> 
+</section>
+</div>
+
+<div id="E-sportNews" class="tabcontent">
+<h1 <p1> <span>Weekly news about Malaysia E-sport community :</span></p1></h1><br>
+  <h2 <p1><span>! ! PUBG MOBILE PMPL SEA FINALS 2021 ! !</span></p1></h2>
+  <p1><span>Perlawanan belum bermula dan situasi sudah menjadi semakin panas! 🥵</span></p1> 
+  <br>
+  <p1><span>Ayuh lihat wakil-wakil Malaysia kita 'trash talk' dan memberitahu kami lebih mengenai persiapan mereka bagi kejuaraan PMPL SEA 😎</span></p1>
+	<br>
+  <p1><span>Jom sokong wakil Malaysia kita dan tonton PMPL SEA CHAMPIONSHIP S3 21-23 May ini! 📺</span></p1>
+  <br>
+	<p1><span>🔔 Ikuti page PUBG MOBILE ESPORTS MALAYSIA untuk mendapatkan berita rasmi terkini!</span></p1><br>
+	<p1><span>Click butang ini untuk ke halaman rasmi PUBGM!<button class="btn btn-success" onclick="window.open('https://www.facebook.com/PUBGMOBILE.MY.OFFICIAL/','_blank')"> Click Me!</button></span></p1>
+	<br>
+	<br>
+	<img src="images/pmplsea.jpg" alt="" style="width:1020px;height:400px;">
+  <br>
+  <br>
+<h2><p1> <span>Points system for PMPL SEA Final Season 3 :</span></p1></h2>
+<table id="t01">
+  <tr>
+    <th>Placement :</th>
+    <th>Placement points :</th>  
+  </tr>
+  <tr>
+    <td>First team</td>
+    <td>15 points</td>
+  </tr>
+  <tr>
+    <td>Second team </td>
+    <td>12 points</td>
+  </tr>
+  <tr>
+    <td>Third team</td>
+    <td>10 points</td>
+  </tr>
+  <tr>
+    <td>Fourth team</td>
+    <td>8 points</td>
+  </tr>
+  <tr>
+    <td>Fifth team</td>
+    <td>6 points</td>
+  </tr>
+  <tr>
+    <td>Sixth team</td>
+    <td>5 points</td>
+  </tr>
+  <tr>
+    <td>Seventh team</td>
+    <td>4 points</td>
+  </tr>
+  <tr>
+    <td>Eighth team</td>
+    <td>2 points</td>
+  </tr>
+  <tr>
+    <td>Nineth team</td>
+    <td>1 points</td>
+  </tr>
+  <tr>
+    <td>Tenth team</td>
+    <td>1 points</td>
+  </tr>
+  <tr>
+    <td>11th team</td>
+    <td>1 points</td>
+  </tr>
+  <tr>
+    <td>12th team</td>
+    <td>1 points</td>
+  </tr>
+  <tr>
+    <td>13th team</td>
+    <td>0 points</td>
+  </tr>
+  <tr>
+    <td>14th team</td>
+    <td>0 points</td>
+  </tr>
+  <tr>
+    <td>15th team</td>
+    <td>0 points</td>
+  </tr>
+  <tr>
+    <td>16th team</td>
+    <td>0 points</td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+</div>
+
+<div id="Contact" class="tabcontent">
+
+<h1><span>Link to our social platform! :</span></h1>
+<br>
+<h2><span>Click on logo or link below :</span></h2>
+  <a href="https://www.facebook.com/memboigaming" target="_blank">
+         <img alt="" src="images/fb.jpg"
+         width="210" height="210" class="rounded-corners"></a>
+  <h3> <p>Link to our Facebook page :<a href="https://www.facebook.com/memboigaming" target="_blank">Click here!</a></p></h3>
+  <br>
+	<a href="https://www.instagram.com/memboi_gaming" target="_blank">
+         <img alt="" src="images/insta.jpg"
+         width="210" height="210" class="rounded-corners"></a>
+    <h3><p>Link to our Instagram channel :<a href="https://www.instagram.com/memboi_gaming" target="_blank">Click here!</a></p></h3>
+	<a href="https://www.youtube.com/channel/UCrRAn7uwhlzWHHAo4SCCdLQ" target="_blank">
+         <img alt="" src="images/yt.jpg"
+         width="210" height="210" class="rounded-corners"></a>
+  <h3><p>Link to our Youtube channel :<a href="https://www.youtube.com/channel/UCrRAn7uwhlzWHHAo4SCCdLQ" target="_blank">Click here!</a></p></h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+
+<div id="Mercandise/Form" class="tabcontent">
+  <h1>Support Memboi Gaming with buying our Merch!	:</h1>
+  <img src="images/shopee.jpg" alt="" style="width:410px;height:210px;" class="rounded-corners">
+  <h3> <p> <span>Click button below to buy or survey our merchandise! :</span> </p></h3>
+  <button class="btn btn-success" onclick="window.open('https://shopee.com.my/shop/255388146/','_blank')"> Click Me!</button>
+  <h1>Want to be one of our Crew? Fill up and submit this form today!</h1>
+  <form action="memboii.php">
+  <label for="Fullname">Full name :</label><br>
+  <input type="text" id="fullname" name="fullname" value="Enter your name :"><br>
+  <label for="E-mail">E-mail :</label><br>
+  <input type="text" id="e-mail" name="e-mail" value="Enter your email :"><br>
+  <label for="Age">Age :</label><br>
+  <input type="text" id="age" name="age" value="Enter your age :"><br>
+  <label for="Gender">Gender :</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <label for="Phonenumber">Phone number :</label><br>
+  <input type="text" id="Phonenumber" name="Phonenumber" value="Enter your phone number :"><br>
+  <label for="Question">Which gadget you often use to play games? :</label><br>
+  <input type="checkbox" id="computer" name="computer" value="Computer">
+  <label for="computer">Computer</label><br>
+  <input type="checkbox" id="smartphone" name="smartphone" value="Smartphone">
+  <label for="smartphone">Smartphone</label><br>
+  <input type="checkbox" id="tablet" name="tablet" value="Tablet">
+  <label for="tablet">Tablet</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+ }
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 760; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 520; 
+} 
+
+</script>
+   
+</body>
+</html> 
